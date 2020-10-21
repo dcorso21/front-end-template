@@ -1,0 +1,7 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+// Get Color
+@function gc($color_name) {
+    @return map.get($color_palette, $color_name);
+}
